@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+
+    <TextView
+            android:id="@+id/txtRequestProblem"
+            android:textSize="20sp"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+    <TextView
+            android:id="@+id/txtRequestDate"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:textAlignment="textEnd"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtRequestProblem"
+            android:layout_alignLeft="@+id/txtRequestProblem"
+            android:layout_alignStart="@+id/txtRequestProblem" android:gravity="end"/>
+
+
+</RelativeLayout>
+

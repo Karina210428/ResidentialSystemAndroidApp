@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_occupant_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="activity.occupant.UserActivity"
+    tools:showIn="@layout/activity_user_screen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+
+                <TextView
+                    style="@style/headerText"
+                    android:text="Информация"
+                    android:layout_marginBottom="20dp"/>
+
+                <RelativeLayout style="@style/profileDetailsLayout">
+<!--                        <ImageView-->
+<!--                            android:id="@+id/nameImageView"-->
+<!--                            android:src="@drawable/ic_name"-->
+<!--                            style="@style/profileDetailsImage" />-->
+
+                        <TextView
+                            android:id="@+id/nameTextView"
+                            android:text="ФИО:"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/profileNameTextView"
+                            android:layout_toRightOf="@id/nameTextView"
+                            style="@style/profileDetailsMiniText" />
+
+                </RelativeLayout>
+
+                <View style="@style/proifleDetailsView" />
+                <RelativeLayout style="@style/profileDetailsLayout">
+
+                        <TextView
+                            android:id="@+id/mobileTextView"
+                            android:text="Номер:"
+                            style="@style/profileDetailsTextMain"/>
+
+                        <TextView
+                            android:id="@+id/profileMobileTextView"
+                            android:layout_toRightOf="@id/mobileTextView"
+                            style="@style/profileDetailsMiniText" />
+
+                </RelativeLayout>
+
+                <View style="@style/proifleDetailsView" />
+                <RelativeLayout style="@style/profileDetailsLayout">
+
+                        <TextView
+                            android:id="@+id/emailTextView"
+                            android:text="Email:"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/profileEmailTextView"
+                            android:layout_toRightOf="@id/emailTextView"
+                            style="@style/profileDetailsMiniText" />
+
+                </RelativeLayout>
+
+                <View style="@style/proifleDetailsView" />
+                <RelativeLayout style="@style/profileDetailsLayout">
+
+                        <TextView
+                            android:id="@+id/apartmentTextView"
+                            android:text="Номер комнаты:"
+                            style="@style/profileDetailsTextMain" />
+
+                        <TextView
+                            android:id="@+id/profileApartmentTextView"
+                            android:layout_toRightOf="@id/apartmentTextView"
+                            style="@style/profileDetailsMiniText" />
+
+                </RelativeLayout>
+
+                <View style="@style/proifleDetailsView" />
+
+        </LinearLayout>
+
+</ScrollView>

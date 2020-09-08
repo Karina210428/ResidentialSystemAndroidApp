@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:background="#1E88E5"
+        android:elevation="8dp"
+        android:backgroundTint="@color/profileBackground"
+        android:layout_marginTop="5dp"
+        android:padding="10dp">
+
+    <TextView
+            android:id="@+id/news_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contrary to popular belief, Lorem Ipsum is not simply random text"
+            android:textSize="18sp"
+            android:textColor="#030D4E"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/news_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_title"
+            android:layout_marginTop="10dp"
+            android:textColor="#343640"
+            android:text="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form..."
+            android:textSize="14dp"/>
+
+    <TextView
+            android:id="@+id/news_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/news_text"
+            android:layout_marginTop="17dp"
+            android:text="50 min ago"
+            android:textSize="12dp"
+            android:textColor="#3949AB"
+            android:textStyle="bold"/>
+</RelativeLayout>

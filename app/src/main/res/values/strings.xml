@@ -1,0 +1,39 @@
+<resources>
+    <string name="url_rest_server">http://10.0.75.1:8081/</string>
+    <string name="app_name">Система обслуживания</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="btn_sign_up">Регистрация</string>
+    <string name="btn_link_login">Вход</string>
+    <string name="hint_password">Пароль</string>
+    <string name="btn_link_signup">Регистрация</string>
+    <string name="prompt_password">Пароль</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="addRequest">Создать заявку</string>
+    <string name="allRequest">Мои заявки</string>
+    <string name="news">Новости</string>
+
+    <string name="problemRequest">Опишите свою проблему</string>
+    <string name="buttonCreateRequest">Отправить заявку</string>
+    <string name="title_request_list">Requests</string>
+    <string name="title_request_detail">Request Detail</string>
+
+    <string name="title_activity_profile">Profile</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="specialization">
+        <item>Сантехник</item>
+        <item>Электромонтер</item>
+        <item>Уборщик</item>
+    </string-array>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="map_key">AIzaSyDiLiMhllPb9m4vxgtV4a-MP2X_7zZmXpY</string>
+</resources>

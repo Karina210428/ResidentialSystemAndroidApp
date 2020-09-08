@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    <TextView
+        android:id="@+id/occupantFullNameTextView"
+        android:text="Коваленко Карина Александровна"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp" />
+
+    <TextView
+        android:id="@+id/occupantApartmentTextView"
+        android:text="12-6-2"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/occupantFullNameTextView"
+        android:layout_alignLeft="@+id/occupantFullNameTextView"
+        android:layout_alignStart="@+id/occupantFullNameTextView" />
+
+    <ImageButton
+            android:id="@+id/btn_info_occupant"
+            android:maxLines="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_below="@+id/occupantFullNameTextView"
+            android:layout_alignLeft="@+id/occupantFullNameTextView"
+            android:layout_alignStart="@+id/occupantFullNameTextView"
+            android:background="@drawable/ic_person_outline_black_24dp" android:layout_marginLeft="334dp"
+            android:layout_marginTop="33dp" android:layout_marginStart="334dp"/>
+
+
+</RelativeLayout>

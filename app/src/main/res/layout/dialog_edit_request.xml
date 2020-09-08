@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dialog_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        tools:context="activity.occupant.RequestDetailActivity"
+        android:background="@color/cardview_light_background">
+    <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Изменить заявку"
+            android:padding="5dp"
+            android:background="@color/cardview_light_background"
+            android:textSize="15dp"
+    />
+    <EditText
+            android:id="@+id/editTextDialogEditRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Опишите проблему"
+            android:textSize="15dp"
+            android:layout_below="@id/dialog_title"
+    />
+    <Button
+            android:id="@+id/buttonDialogEditRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/profileBackground"
+            android:text="Изменить"
+            android:layout_alignParentRight="true"
+            android:background="#536DFE"
+            android:layout_below="@id/editTextDialogEditRequest"
+    />
+    <Button
+            android:id="@+id/buttonDialogCancelRequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отмена"
+            android:textColor="@color/profileBackground"
+            android:layout_toLeftOf="@id/buttonDialogEditRequest"
+            android:background="#FFAB40"
+            android:layout_marginRight="21dp"
+            android:layout_alignBaseline="@id/buttonDialogEditRequest"
+    />
+</RelativeLayout>

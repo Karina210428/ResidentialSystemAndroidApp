@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="activity.employee.EmployeeDetailRequestActivity">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp">
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                    android:id="@+id/problemTextViewAdmin"
+                    android:text="Проблема:"
+                    style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                    android:id="@+id/problemInfoTextViewAdmin"
+                    android:layout_toRightOf="@id/problemTextViewAdmin"
+                    style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                    android:id="@+id/fullNameOccupantTextViewAdmin"
+                    android:text="ФИО жильца:"
+                    style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                    android:id="@+id/fullNameOccupantInfoTextViewAdmin"
+                    android:layout_toRightOf="@id/fullNameOccupantTextViewAdmin"
+                    style="@style/profileDetailsMiniText" />
+
+        </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+
+            <TextView
+                    android:id="@+id/dateOfRequestTextViewAdmin"
+                    android:text="Дата:"
+                    style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                    android:id="@+id/dateOfRequestInfoTextViewAdmin"
+                    android:layout_toRightOf="@id/dateOfRequestTextViewAdmin"
+                    style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+
+        <View style="@style/proifleDetailsView" />
+
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <FrameLayout
+                    android:id="@+id/frameLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <Button android:id="@+id/buttonGetAnswer"
+                        android:layout_width="wrap_content"
+                        android:width="120dp"
+                        android:text="Ответить"
+                        android:layout_marginBottom="20dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|center"
+                        android:background="#431880"
+                        style="?android:attr/buttonStyleSmall"
+                        android:textColor="@android:color/white"/>
+
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

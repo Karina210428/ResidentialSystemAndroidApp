@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="8dp">
+    <TextView
+            android:id="@+id/employeeFullNameTextView"
+            android:textSize="20sp"
+            android:text="fghjklkjhgf"
+            android:layout_marginTop="8dp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp" />
+
+    <TextView
+            android:id="@+id/employeeSpecializationTextView"
+            android:text="12-6-2"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employeeFullNameTextView"
+            android:layout_alignLeft="@+id/employeeFullNameTextView"
+            android:layout_alignStart="@+id/employeeFullNameTextView" />
+
+    <ImageButton
+            android:id="@+id/btn_location"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_below="@+id/employeeSpecializationTextView"
+            android:layout_alignLeft="@+id/employeeSpecializationTextView"
+            android:layout_alignStart="@+id/employeeSpecializationTextView"
+            android:background="@drawable/ic_place_black_24dp" android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp" android:layout_marginStart="0dp"/>
+
+    <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_below="@+id/btn_location"
+            android:layout_alignLeft="@+id/btn_location"
+            android:layout_alignStart="@+id/btn_location"
+            android:background="@drawable/ic_call_black_24dp" android:layout_marginLeft="169dp"
+            android:layout_marginTop="-39dp" android:layout_marginStart="169dp"/>
+    <ImageButton
+            android:id="@+id/btn_info"
+            android:maxLines="1"
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:layout_below="@+id/btn_call"
+            android:layout_alignLeft="@+id/btn_call"
+            android:layout_alignStart="@+id/btn_call"
+            android:background="@drawable/ic_person_outline_black_24dp" android:layout_marginLeft="171dp"
+            android:layout_marginTop="-38dp" android:layout_marginStart="171dp"/>
+</RelativeLayout>

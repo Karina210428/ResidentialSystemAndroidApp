@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="activity.occupant.RequestDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <TextView
+            android:id="@+id/problemTextView"
+            android:text="Проблема:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/problemInfoTextView"
+            android:layout_toRightOf="@id/problemTextView"
+            style="@style/profileDetailsMiniText" />
+
+    </RelativeLayout>
+
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <TextView
+            android:id="@+id/fullNameOccupantTextView"
+            android:text="ФИО жильца:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/fullNameOccupantInfoTextView"
+            android:layout_toRightOf="@id/fullNameOccupantTextView"
+            style="@style/profileDetailsMiniText" />
+
+    </RelativeLayout>
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+
+        <TextView
+            android:id="@+id/dateOfRequestTextView"
+            android:text="Дата заявки:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/dateOfRequestInfoTextView"
+            android:layout_toRightOf="@id/dateOfRequestTextView"
+            style="@style/profileDetailsMiniText" />
+    </RelativeLayout>
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+        <TextView
+            android:id="@+id/dateOfDeadlineTextView"
+            android:text="Выполнено:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/dateOfDeadlineInfoTextView"
+            android:layout_toRightOf="@id/dateOfDeadlineTextView"
+            style="@style/profileDetailsMiniText" />
+    </RelativeLayout>
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+        <TextView
+            android:id="@+id/fullNameEmployeeTextView"
+            android:text="ФИО работника:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/fullNameEmployeeInfoTextView"
+            android:layout_toRightOf="@id/fullNameEmployeeTextView"
+            style="@style/profileDetailsMiniText" />
+    </RelativeLayout>
+    <View style="@style/proifleDetailsView" />
+
+    <RelativeLayout style="@style/profileDetailsLayout">
+        <TextView
+            android:id="@+id/statusTextView"
+            android:text="Статус:"
+            style="@style/profileDetailsTextMain"/>
+
+        <TextView
+            android:id="@+id/statusInfoTextView"
+            android:layout_toRightOf="@id/statusTextView"
+            style="@style/profileDetailsMiniText" />
+    </RelativeLayout>
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+            <TextView
+                    android:id="@+id/confirmEmployeeTextView"
+                    android:text="Подтверждение:"
+                    style="@style/profileDetailsTextMain"/>
+
+            <TextView
+                    android:id="@+id/confirmEmployeeInfoTextView"
+                    android:layout_toRightOf="@id/confirmEmployeeTextView"
+                    style="@style/profileDetailsMiniText" />
+        </RelativeLayout>
+        <View style="@style/proifleDetailsView" />
+    <View style="@style/proifleDetailsView" />
+
+        <RelativeLayout style="@style/profileDetailsLayout">
+    <FrameLayout
+            android:id="@+id/frameLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <Button android:id="@+id/buttonDeleteRequest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EAD300"
+                android:width="100dp"
+                android:text="Удалить"
+                android:layout_marginLeft="0dp"
+                android:layout_marginBottom="20dp"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_gravity="bottom|left"
+                android:textColor="@android:color/white"/>
+        <Button android:id="@+id/buttonEditDoneRequest"
+                android:layout_width="wrap_content"
+                android:width="100dp"
+                android:text="Изменить"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="#D51068"
+                style="?android:attr/buttonStyleSmall"
+                android:textColor="@android:color/white"/>
+        <Button android:id="@+id/buttonRequestRegister"
+            android:layout_width="wrap_content"
+            android:width="120dp"
+                android:text="Подтвердить"
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:background="#374283"
+            style="?android:attr/buttonStyleSmall"
+            android:textColor="@android:color/white"/>
+
+    </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

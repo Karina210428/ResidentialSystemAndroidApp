@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="activity.occupant.UserActivity"
+    android:background="@color/profileBackground"
+    android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:id="@+id/linearLayout"
+                android:background="@drawable/profile_bk">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profile_username"
+                    android:text="email"
+                    android:textSize="28dp"
+                    android:textStyle="bold"/>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_username"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="developer@appsnipp.com"-->
+<!--                    android:textSize="12dp"-->
+<!--                    android:textStyle="bold"/>-->
+
+<!--                <RelativeLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:gravity="center"-->
+<!--                    android:layout_gravity="bottom"-->
+<!--                    android:layout_marginTop="20dp"-->
+<!--                    android:background="@color/profileBackground">-->
+
+<!--                    <View-->
+<!--                        android:layout_alignParentTop="true"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="30dp"-->
+<!--                        android:background="@drawable/profile_bk"/>-->
+
+<!--                    <TextView-->
+<!--                        android:text="Back to\nHome"-->
+<!--                        style="@style/profileStyledBackButton" />-->
+<!--                </RelativeLayout>-->
+
+            </LinearLayout>
+
+    <include layout="@layout/content_profile" />
+
+</LinearLayout>

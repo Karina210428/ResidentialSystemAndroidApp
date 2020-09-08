@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.residentialsystemapp">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Design.Light"
+        android:usesCleartextTraffic="true">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/map_key"/>
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+
+
+        <activity android:name="activity.AuthActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="activity.occupant.RegisterActivity" />
+        <activity android:name="activity.occupant.UserActivity" />
+        <activity android:name="activity.occupant.StudentRequestActivity" />
+        <activity android:name="activity.occupant.SendRequestActivity" />
+        <activity android:name="activity.occupant.RequestDetailActivity" />
+        <activity android:name="activity.employee.ListAllRequestActivity" />
+        <activity android:name="activity.employee.EmployeeDetailRequestActivity" />
+        <activity android:name="activity.employee.EmployeeRequestList" />
+        <activity android:name="activity.employee.RegisterEmployeeActivity" />
+        <activity android:name="activity.employee.EmployeeProfileActivity" />
+        <activity android:name="activity.admin.gps.MapsActivity" />
+        <activity android:name="activity.admin.employee.EmployeeListActivity" />
+        <activity android:name="activity.admin.employee.EmployeeDetailActivity"/>
+        <activity android:name="activity.admin.occupant.OccupantDetailActivity"/>
+        <activity android:name="activity.admin.occupant.OccupantListActivity"/>
+        <activity android:name="activity.admin.news.AllNewsActivity"/>
+        <activity android:name="activity.admin.news.WriteNewsActivity"/>
+        <activity android:name="activity.admin.request.AllAdminRequest"/>
+        <activity android:name="activity.admin.request.AdminRequestDetail"/>
+        <activity android:name="activity.admin.gps.AllEmployeeOnMapActivity"/>
+        <activity android:name="activity.admin.request.SendEmailActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <data android:mimeType="message/rfc822"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="activity.admin.gps.LocationService"
+            android:exported="true" />
+    </application>
+
+</manifest>

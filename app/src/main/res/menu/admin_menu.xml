@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/allRequestAdmin"
+          android:title="Все заявки"/>
+
+    <item android:id="@+id/allOccupantAdmin"
+          android:title="Список проживающих" />
+
+    <item android:id="@+id/allEmployeeAdmin"
+          android:title="Список сотрудников" />
+
+    <item android:id="@+id/news"
+          android:title="Новости" />
+
+    <item android:id="@+id/addNewsAdmin"
+          android:title="Добавить новость" />
+
+    <item android:id="@+id/allEmployeeLocation"
+          android:title="Местоположение сотрудников" />
+
+    <item android:id="@+id/logout"
+          android:title="Выход" />
+</menu>
